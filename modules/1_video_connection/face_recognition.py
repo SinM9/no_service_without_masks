@@ -1,7 +1,7 @@
 import cv2
 import face_recognition
 
-video_capture = cv2.VideoCapture("/dev/video0")
+video_capture = cv2.VideoCapture(0)
 
 face_locations = []
 
