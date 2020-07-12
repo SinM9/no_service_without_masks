@@ -14,3 +14,17 @@ TEST(Check_travis, belive_i_can_fly) {
   
   EXPECT_EQ(5, k);
 }
+
+TEST(Check_f0, belive) {
+  int k = 8;
+  int j = FunctionName(k);
+  
+  EXPECT_EQ(0, j);
+}
+
+TEST(Check_f1_upalo, belive) {
+  int k = 4;
+  int j = FunctionName(k);
+  
+  EXPECT_EQ(1, j);
+}

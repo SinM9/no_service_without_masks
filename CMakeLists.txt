@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.4.3)
 
-project(openvino_practice CXX)
+project(servise_mask CXX)
 
 find_package(InferenceEngine REQUIRED)
 find_package(OpenCV REQUIRED)
