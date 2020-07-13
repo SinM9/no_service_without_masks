@@ -40,5 +40,6 @@ script:
   # Run Python test 
   - python3 -m unittest -v test_detector
   - python3 -m unittest -v test_sourse
+  - python3 -m unittest -v test_name
   # add new modules here
  
