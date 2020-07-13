@@ -9,7 +9,7 @@
 using namespace cv;
 using namespace cv::utils::fs;
 
-TEST(Check_travis, belive_i_can_fly) {
+TEST(Check_travis, belive_i_can_fly_i) {
   int k = 5;
   
   EXPECT_EQ(5, k);
