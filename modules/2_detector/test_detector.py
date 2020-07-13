@@ -8,7 +8,7 @@ from detector import detect
 class TestForNMSandIOU(unittest.TestCase):
     
     def test_detect(self):
-        data_folder = os.path.join(r'D:\openvino_practice','data')
+        data_folder = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
         img_file=os.path.join(data_folder,'conference.png')
         box=detect(data_folder,img_file)
         k=0
