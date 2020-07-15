@@ -6120,7 +6120,7 @@
 			</output>
 		</layer>
 		<layer id="350" name="detection_out" type="DetectionOutput" version="opset1">
-			<data background_label_id="0" code_type="caffe.PriorBoxParameter.CENTER_SIZE" confidence_threshold="0.019999999552965164" eta="1.0" height="0" height_scale="0" input_height="1" input_width="1" interp_mode="" keep_top_k="200" nms_threshold="1.0" normalized="1" num_classes="2" pad_mode="" pad_value="" prob="0" resize_mode="" share_location="1" top_k="200" variance_encoded_in_target="0" visualize_threshold="0.6" width="0" width_scale="0"/>
+			<data background_label_id="0" code_type="caffe.PriorBoxParameter.CENTER_SIZE" confidence_threshold="0.019999999552965164" eta="1.0" height="0" height_scale="0" input_height="1" input_width="1" interp_mode="" keep_top_k="200" nms_threshold="0.45" normalized="1" num_classes="2" pad_mode="" pad_value="" prob="0" resize_mode="" share_location="1" top_k="200" variance_encoded_in_target="0" visualize_threshold="0.6" width="0" width_scale="0"/>
 			<input>
 				<port id="0">
 					<dim>1</dim>
