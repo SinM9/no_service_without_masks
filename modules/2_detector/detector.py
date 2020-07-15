@@ -3,9 +3,10 @@ import cv2
 import numpy as np
 from openvino.inference_engine import IECore
 
-def detect(data_folder,img_file):
+def detect(image):
     
     ie = IECore()
+    data_folder = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
     model_xml = os.path.join(data_folder, 'face-detection-0104.xml')
     model_bin = os.path.join(data_folder, 'face-detection-0104.bin')
 
@@ -14,7 +15,6 @@ def detect(data_folder,img_file):
     if len(net.inputs["image"].layout) == 4:
         n, c, h, w = net.inputs["image"].shape
 
-    image = cv2.imread(img_file)
     ih, iw = image.shape[:-1]
 
     if (ih, iw) != (h, w):
@@ -46,8 +46,4 @@ def detect(data_folder,img_file):
            classes.append(label)
            probabilities.append(proposal[2])
 
-    tmp_image = cv2.imread(img_file)
-    for box in boxes:
-        cv2.rectangle(tmp_image, (box[0], box[1]), (box[2], box[3]), (232, 35, 244), 2)
-    cv2.imwrite("out.png", tmp_image)
     return boxes;
