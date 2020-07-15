@@ -41,5 +41,6 @@ script:
   - python3 -m unittest -v test_detector
   - python3 -m unittest -v test_sourse
   - python3 -m unittest -v test_landmarks
+  - python3 -m unittest -v test_metric
   # add new modules here
  
