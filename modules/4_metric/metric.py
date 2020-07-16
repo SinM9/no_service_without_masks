@@ -11,7 +11,8 @@ def calc_metric(image):
 
     hist_1 = cv2.calcHist([img1],[0],None,[256],[0,256])
     hist_2 = cv2.calcHist([img2],[0],None,[256],[0,256])
-        
+    
+    '''
     sum_hist_1 = 0
     sum_hist_2 = 0
     for i in range (len(hist_1)):
@@ -23,5 +24,8 @@ def calc_metric(image):
     for i in range (len(hist_1)):
         sum += math.sqrt(hist_1[i] * hist_2[i]) / sum_hist
     metric = math.sqrt(1 - sum)
+    '''
+
+    metric = cv2.compareHist(hist_1,hist_2,cv2.HISTCMP_BHATTACHARYYA)
 
     return metric
