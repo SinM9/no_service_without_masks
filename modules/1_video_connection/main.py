@@ -21,10 +21,10 @@ while(cap.isOpened()):
 
         if (metric > threshold):
             cv2.putText(frame, 'mask', (box[0], box[1]), cv2.FONT_HERSHEY_SIMPLEX,  
-                   1, (255, 0, 0) , 2, cv2.LINE_AA) 
+                   1, (0, 255, 0) , 2, cv2.LINE_AA) 
         else:
             cv2.putText(frame, 'no mask', (box[0], box[1]), cv2.FONT_HERSHEY_SIMPLEX,  
-                   1, (255, 0, 0) , 2, cv2.LINE_AA) 
+                   1, (0, 0, 255) , 2, cv2.LINE_AA) 
 
     cv2.imshow('frame',frame)
 
