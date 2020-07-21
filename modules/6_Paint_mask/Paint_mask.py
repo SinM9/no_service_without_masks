@@ -6,7 +6,7 @@ from detector import detect
 from landmarks import landmarks_35
 
 data_folder = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
-image = os.path.join(data_folder,'no_mask2.jpg')
+image = os.path.join(data_folder,'nomasks.png')
 img = cv2.imread(image)
 image2 = os.path.join(data_folder,'medical-mask2.png')
 img2 = cv2.imread(image2)
@@ -26,7 +26,7 @@ for box in boxes:
 
     dst = cv2.add(img1_bg, img2_fg)
     img1[y[19]:ih, 0:iw] = dst
-    img[boxes[0][1] + y[19]:boxes[0][3], boxes[0][0]:boxes[0][2]] = dst
+    img[box[1] + y[19]:box[3], box[0]:box[2]] = dst
 
 cv2.imwrite('res.jpg',img)
 
