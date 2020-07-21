@@ -51,7 +51,7 @@ def landmarks_5(image):
 
 
 def landmarks_35(image):
-    data_folder = os.path.join(r'D:\no_service_without_masks', 'data')
+    data_folder = os.path.join(os.path.dirname(__file__), '..', '..', 'data')
 
     ie = IECore()
    

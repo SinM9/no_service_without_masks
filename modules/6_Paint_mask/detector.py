@@ -49,5 +49,4 @@ def detect(data_folder,img_file):
     tmp_image = cv2.imread(img_file)
     for box in boxes:
         cv2.rectangle(tmp_image, (box[0], box[1]), (box[2], box[3]), (232, 35, 244), 2)
-    cv2.imwrite("out.png", tmp_image)
     return boxes;
