@@ -41,6 +41,6 @@ python3 -m unittest -v test_name #Запуск тестов, где test_name и
 ### Визуализация
 
 <img src="data/conference.png" width="256" title="before"> <img src="data/out.png" width="256" title="after">
-
-<img src="data/gif1.gif" width="480"> 
-<img src="data/gif2.gif" width="580"> 
+[Ссылка на полное видео](https://www.youtube.com/watch?v=yNamCHhG9qQ)
+<img src="data/gif1.gif" width="550"> 
+<img src="data/gif2.gif" width="550"> 
