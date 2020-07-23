@@ -40,7 +40,10 @@ python3 -m unittest -v test_name #Запуск тестов, где test_name и
 
 ### Визуализация
 
-<img src="data/conference.png" width="256" title="before"> <img src="data/out.png" width="256" title="after">
-[Ссылка на полное видео](https://www.youtube.com/watch?v=yNamCHhG9qQ)
+- [Ссылка на полное видео](https://www.youtube.com/watch?v=yNamCHhG9qQ)
+
+- Детектирование маски
 <img src="data/gif1.gif" width="550"> 
+
+- Рисование маски
 <img src="data/gif2.gif" width="550"> 
