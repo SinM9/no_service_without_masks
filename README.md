@@ -30,6 +30,14 @@ cmake -DCMAKE_BUILD_TYPE=Release .. && make -j4
 python3 -m unittest -v test_name #Запуск тестов, где test_name имя вашего теста
 ```
 
+### Описание модулей
+- `0_detector` - детектирование лица с помощью face-detection-0104
+- `1_landmarks` - определение ключевых точек лица с помощью landmarks-regression-retail-0009 и facial-landmarks-35-adas-0001
+- `2_metric` - определение расстояния Бхатачария для гистограмм верхней и нижней частей изображения в оттенках серого
+- `3_color_metric` - определение расстояния Бхатачария для гистограмм верхней и нижней частей цветного изображения (по трем каналам)
+- `4_paint_mask` - наложение медицинской маски на задетектированное лицо
+- `5_project` - загрузка видео и определение маски на лице с помощью выше указанных функций
+
 ### Визуализация
 
 <img src="data/conference.png" width="256" title="before"> <img src="data/out.png" width="256" title="after">
