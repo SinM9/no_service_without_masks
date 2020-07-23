@@ -2,8 +2,7 @@ import cv2
 import numpy as np
 import math
 
-def calc_color_metric(image): 
-    img = cv2.resize(image, (60, 80))
+def calc_color_metric(img): 
     ih, iw, ich = img.shape
     img1 = img[0: np.int(ih / 2), 0:iw]
     img2 = img[np.int(ih / 2):ih, 0:iw]
