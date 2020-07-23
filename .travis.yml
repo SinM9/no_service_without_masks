@@ -42,5 +42,7 @@ script:
   - python3 -m unittest -v test_sourse
   - python3 -m unittest -v test_landmarks
   - python3 -m unittest -v test_metric
+  - python3 -m unittest -v test_color_metric
+  - python3 -m unittest -v test_paint_mask
   # add new modules here
  
